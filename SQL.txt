@@ -1,0 +1,14 @@
+/*
+*	Предполагается, что имеются две таблицы:
+*	Таблица Product:
+*	name 	| 	categoryName	|	...
+*
+*	Таблица Category
+*	categoryName	|	...
+*
+*/
+
+SELECT Product.name, Category.categoryName
+FROM
+  Product LEFT JOIN Category
+  ON Product.categoryName = Category.categoryName
